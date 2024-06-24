@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/site/pages/documentation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Documentation</title>
+    
+<link rel="stylesheet" href="./Documentation_files/documentation.css"><link rel="icon" type="image/x-icon" href="http://127.0.0.1:5500/site/images/favicon.png"></head>
+<body>
+    <header class="header">
+        <a href="http://127.0.0.1:5500/site/pages/index.html" class="logo"><img src="./Documentation_files/logo.png" width="32" ,="" height="32"></a>
+        <nav class="topnav">
+            <a class="active" href="http://127.0.0.1:5500/site/pages/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/site/pages/about.html">About</a>
+            <a href="http://127.0.0.1:5500/site/pages/download.html">Download</a>
+            <a href="http://127.0.0.1:5500/site/pages/documentation.html">Documentation</a>
+        </nav>
+    </header>
+    <div class="doc">
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>/generate paramters: None</td>
+                  <td>Generates a public and private key for user and sends it through direct messages in PEM format. </td>
+                </tr>
+                <tr>
+                  <td>/encrypt parameters: another user, message</td>
+                  <td>Encrypts the message using the another user's public key. </td>
+                </tr>
+                <tr>
+                  <td>/decrypt parameters: message, private key</td>
+                  <td>decrypts an encrypted message with your private key. </td>
+                </tr>
+              </tbody>
+        </table>
+    </div> 
+    <div class="botlogo">
+        <img src="./Documentation_files/19a848918d0cbdd2fae9b036fa2a0383" width="100px" height="100px">
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
