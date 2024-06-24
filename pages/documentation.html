@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/documentation.css">
+    <title>Documentation</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="../images/logo.png" width="32", height="32"></a>
+        <nav class="topnav">
+            <a class="active" href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./download.html">Download</a>
+            <a href="./documentation.html">Documentation</a>
+        </nav>
+    </header>
+    <div class="doc">
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>/generate paramters: None</td>
+                  <td>Generates a public and private key for user and sends it through direct messages in PEM format. </td>
+                </tr>
+                <tr>
+                  <td>/encrypt parameters: another user, message</td>
+                  <td>Encrypts the message using the another user's public key. </td>
+                </tr>
+                <tr>
+                  <td>/decrypt parameters: message, private key</td>
+                  <td>decrypts an encrypted message with your private key. </td>
+                </tr>
+              </tbody>
+        </table>
+    </div> 
+</body>
+</html>
